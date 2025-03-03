@@ -3,6 +3,7 @@ using BarberBoss.Application.UseCases.Invoicings.Delete;
 using BarberBoss.Application.UseCases.Invoicings.Get;
 using BarberBoss.Application.UseCases.Invoicings.Register;
 using BarberBoss.Application.UseCases.Invoicings.Reports;
+using BarberBoss.Application.UseCases.Invoicings.Reports.Excel;
 using BarberBoss.Application.UseCases.Invoicings.Update;
 using Microsoft.Extensions.DependencyInjection;
 

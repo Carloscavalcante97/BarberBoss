@@ -1,4 +1,5 @@
-﻿using BarberBoss.Domain.Enums;
+﻿using BarberBoss.Application.UseCases.Invoicings.Reports.Excel;
+using BarberBoss.Domain.Enums;
 using BarberBoss.Domain.Repositories.Invoicings;
 using ClosedXML.Excel;
 
@@ -31,7 +32,7 @@ namespace BarberBoss.Application.UseCases.Invoicings.Reports
             {
                 worksheet.Cell($"A{raw}").Value = invoicing.Nome;
                 worksheet.Cell($"B{raw}").Value = invoicing.Servico.TipoServicoToString();
-                worksheet.Cell($"C{raw}").Value = invoicing.Data.ToString("dd/MM/yyyy");
+                worksheet.Cell($"C{raw}").Value = invoicing.Data?.ToString("dd/MM/yyyy") ?? string.Empty;
                 worksheet.Cell($"D{raw}").Value = invoicing.Descricao;
                 worksheet.Cell($"E{raw}").Value = invoicing.TipoPagamento.TipoPagamentoToString();
                 worksheet.Cell($"F{raw}").Value = $"{CURRENCY_SYMBOL} -{invoicing.Preco}";

@@ -1,4 +1,4 @@
-﻿using BarberBoss.Application.UseCases.Invoicings.Reports;
+﻿using BarberBoss.Application.UseCases.Invoicings.Reports.Excel;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
 

@@ -1,4 +1,4 @@
-﻿namespace BarberBoss.Application.UseCases.Invoicings.Reports
+﻿namespace BarberBoss.Application.UseCases.Invoicings.Reports.Excel
 {
     public interface IGenerateInvoicingReportExcelUseCase
     {
