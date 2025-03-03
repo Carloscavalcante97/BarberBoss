@@ -16,7 +16,7 @@ namespace BarberBoss.Application.AutoMapper
         }
         private void EntityToResponse()
         {
-            CreateMap<Invoicing, ResponseInvoicingJson>();
+            CreateMap<Invoicing, ResponseShortInvoicingJson>();
         }
     }
 }

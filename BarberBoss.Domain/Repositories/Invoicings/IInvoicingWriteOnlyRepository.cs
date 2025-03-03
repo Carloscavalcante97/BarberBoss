@@ -10,5 +10,16 @@ namespace BarberBoss.Domain.Repositories.Invoicings
         /// <param name="invoicing"></param>
         /// <returns></returns>
         Task Add(Invoicing invoicing);
+        /// <summary>
+        /// This method delete a invoicing.
+        /// </summary>
+        /// <param name="invoicing"></param>
+        /// <returns></returns>
+        Task<bool> Delete(long id);
+        /// <summary>
+        /// This method update a invoicing.
+        /// </summary>
+        /// <param name="invoicing"></param>
+        /// <returns></returns>
     }
 }

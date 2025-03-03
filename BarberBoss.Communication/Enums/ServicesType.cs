@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BarberBoss.Communication.Enums
+﻿namespace BarberBoss.Communication.Enums
 {
     public enum ServicesType
     {
-        Corte = 1,
-        Barba = 2,
-        CorteEBarba = 3,
-        Hidratacao = 4,
-        Lavagem = 5,
+        Corte = 0,
+        Barba = 1,
+        CorteEBarba = 2,
+        Hidratacao = 3,
+        Lavagem = 4,
     }
 }

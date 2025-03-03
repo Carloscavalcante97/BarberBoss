@@ -1,5 +1,4 @@
-﻿
-using BarberBoss.Domain.Repositories;
+﻿using BarberBoss.Domain.Repositories;
 using BarberBoss.Domain.Repositories.Invoicings;
 using BarberBoss.infrastructure.DataAccess;
 using BarberBoss.infrastructure.DataAccess.Repositories;
@@ -21,6 +20,8 @@ namespace BarberBoss.infrastructure
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IInvoicingWriteOnlyRepository, InvoicingRepository>();           
+            services.AddScoped<IInvoicingReadOnlyRepository, InvoicingRepository>();
+            services.AddScoped<IInvoicingUpdateOnlyRepository, InvoicingRepository>();
 
         }
         private static void AddDbContext(IServiceCollection services, IConfiguration configuration)

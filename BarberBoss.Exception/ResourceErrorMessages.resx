@@ -123,6 +123,9 @@
   <data name="GREATER_THAN_0" xml:space="preserve">
     <value>The price must be more than 0</value>
   </data>
+  <data name="INVOICING_NOT_FOUND" xml:space="preserve">
+    <value>Invoicing not found</value>
+  </data>
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>Name Required</value>
   </data>

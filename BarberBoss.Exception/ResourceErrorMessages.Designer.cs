@@ -79,6 +79,15 @@ namespace BarberBoss.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Invoicing not found.
+        /// </summary>
+        public static string INVOICING_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("INVOICING_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Name Required.
         /// </summary>
         public static string NAME_EMPTY {

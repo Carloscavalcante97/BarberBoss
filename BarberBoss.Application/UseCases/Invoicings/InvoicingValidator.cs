@@ -2,7 +2,7 @@
 using BarberBoss.Exception;
 using FluentValidation;
 
-namespace BarberBoss.Application.UseCases.Invoicings.Register
+namespace BarberBoss.Application.UseCases.Invoicings
 {
     public class InvoicingValidator : AbstractValidator<RequestInvoicingJson>
     {
